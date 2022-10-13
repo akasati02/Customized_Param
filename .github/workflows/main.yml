@@ -27,5 +27,5 @@ jobs:
     steps:
       - run: git config --global core.longpaths true
       - name: Check HCI input value
-        run: echo {{github.event.inputs.name}}
+        run: echo The HCI name is ${{ github.event.inputs.name }}
      
